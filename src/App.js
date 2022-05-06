@@ -4,7 +4,6 @@ import WalletProvider from './contexts/wallet/WalletProvider'
 import NetworkProvider from './contexts/network/NetworkProvider'
 import cacheProvider from './modules/cache'
 import useWeb3Loader from './hooks/useWeb3Loader'
-import Footer from './components/Footer'
 import TokensProvider from './contexts/tokens/TokensProvider'
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
           <WalletProvider>
             <Router />
 
-            <Footer />
           </WalletProvider>
         </TokensProvider>
       </NetworkProvider>

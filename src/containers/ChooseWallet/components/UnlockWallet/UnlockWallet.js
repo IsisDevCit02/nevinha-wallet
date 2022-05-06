@@ -30,6 +30,7 @@ function UnlockWallet() {
 
     try {
       const accounts = await walletService.unlockWallet(password)
+      console.log('Blabla',accounts)
       importWallet(dispatch, {
         password,
         accounts,
